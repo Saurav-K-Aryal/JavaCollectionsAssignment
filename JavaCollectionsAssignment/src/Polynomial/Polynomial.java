@@ -116,7 +116,9 @@ public class Polynomial {
 		else if(coefficient==1){
 			product+="x^"+Integer.toString(exponents);
 		}
-		else if(coefficient==0); // do nothing.
+		else if(coefficient==0) {
+			product = "0";
+		}
 		else{
 			product+=coefficient+"x^"+exponents;
 		}
